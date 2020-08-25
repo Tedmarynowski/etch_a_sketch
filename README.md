@@ -1,1 +1,1 @@
-This is going to be an etch-a-sketch web app!
+Etch-a-sketch web app!
