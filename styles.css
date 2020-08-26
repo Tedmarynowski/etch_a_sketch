@@ -20,21 +20,16 @@ body {
     min-width: 660px;
     min-height: 550px;
     height: calc(100vh);
-    background-image: url("./images/background.jpg");
+    background-image: url("./images/background.svg"); /* background provided by SVGBackgrounds.com*/
     background-size: 800px;
+    font-family: 'Life Savers', cursive;
 }
 
 h1 {
     text-align: center;
-}
+    color: white;
 
-.headerBar {
-    background-color: white;
-    padding:0;
-    margin:0;
-    justify-content: center;
-    align-self: center;
-    display:none;
+    font-size: 4rem;
 }
 .container {
     width: 100%;
@@ -51,6 +46,7 @@ h1 {
 .etchASketch {
     border-style: solid;
     border-width: 5rem;
+    border-radius: 2%;
     border-color: rgb(223, 15, 15);
     background: rgb(245, 242, 242);
     height: 100%;
@@ -85,9 +81,7 @@ h1 {
     background-color: rgb(222, 222, 224);
 }
 
-.draw {
-    background-color: black;
-}
+
 .round {
     background-color: #fff;
     border-radius: 100%;
@@ -106,3 +100,49 @@ h1 {
     z-index: 1;
     left: 99%;
 }
+
+.controls {
+    color: white;
+    padding:0;
+    background-color: rgb(223, 15, 15);
+    border-radius: 3%;
+    margin: 20px 0 0 0;
+    justify-content: flex-end;
+    align-self: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.btn {
+    border: 2px solid rgb(223, 15, 15);
+    color: White;
+    background-color: transparent;
+    font-size: 1.1em;
+    margin: 2px;
+    padding: 5px 10px;
+    transition: 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+  
+.btn:hover {
+    background-color: white;
+    color: #323232;
+    transition: 0.5s;
+    box-shadow: 0px 3px 15px rgba(100, 100, 100, 0.4);
+    position: relative;
+    top: -1px;
+  }
+
+.brushStyle {
+      margin-left: 6em;
+      font-size: 1.1em;
+  }
+
+  /* JS Drawing styles */ 
+
+.draw {
+    background-color: black; 
+}
+
